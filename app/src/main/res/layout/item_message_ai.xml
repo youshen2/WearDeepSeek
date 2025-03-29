@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp">
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    app:cardCornerRadius="12dp"
+    android:layout_gravity="start">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/reason_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:drawableStartCompat="@drawable/icon_arrow_bottom"
+            android:textSize="11sp"
+            android:text="思考中..." />
+
+        <TextView
+            android:id="@+id/reason_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="10sp"
+            android:alpha="0.8"
+            android:maxWidth="120dp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textSize="12sp"
+            android:maxWidth="140dp"
+            android:text=""
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+</FrameLayout>
